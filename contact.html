@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="Adam Beleko (BossBele)" />
+
+    <title>Contact Us - CYDI</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
+    <link
+      href="vendor/simple-line-icons/css/simple-line-icons.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Custom styles for this template -->
+    <link href="css/landing-page.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-light bg-light static-top pt-0">
+      <div class="container bg-primary py-2">
+        <div class="col col-sm-6 col-md-6">
+          <div class="row w-100 mx-auto">
+            <div class="col text-white">
+              Phone:
+              <a class="text-white" href="tel:+255715807947"
+                >+255 715 807 947</a
+              >
+            </div>
+            <div class="col text-white">
+              Email:
+              <a class="text-white" href="mailto:info@cydi.or.tz"
+                >info@cydi.or.tz</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img src="CYDI New Logo2019.400px.jpg" style="height: 60px;"
+        /></a>
+        <a class="btn btn-link" href="index.html">Home</a>
+        <a class="btn btn-link" href="about.html">About Us</a>
+        <a class="btn btn-link" href="programs.html">Our Programs</a>
+        <a class="btn btn-link" href="current-programs.html"
+          >Current Programs</a
+        >
+        <a class="btn btn-link" href="contact.html">Contact Us</a>
+        <a class="btn btn-link" href="donate.html">Donate</a>
+      </div>
+    </nav>
+
+    <section class="py-5">
+      <div class="col-lg-6 order-lg-1 mx-auto my-auto showcase-text">
+        <h2 class="text-center">Enquiries</h2>
+        <div>
+          <form>
+            <div class="form-group">
+              <div class="col">
+                <label for="">Name</label>
+                <input
+                  name="name"
+                  type="text"
+                  class="form-control"
+                  placeholder="Name"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col">
+                <label for="">Phone</label>
+                <input
+                  name="phone"
+                  type="number"
+                  class="form-control"
+                  placeholder="Phone"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col">
+                <label for="">Enquiry</label>
+                <textarea
+                  name="enquiry"
+                  class="form-control"
+                  rows="5"
+                  style="resize: none;"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col">
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="col-lg-6 order-lg-1 mx-auto my-auto showcase-text">
+        <h2 class="text-center">Contact Us</h2>
+        <table>
+          <tr>
+            <td>Address:&ensp;</td>
+            <td>PSSSF Building Dodoma, Wing ‘B’ Basement, Makole Street</td>
+          </tr>
+          <tr>
+            <td>Mob:&ensp;</td>
+            <td>+255 715 807 947</td>
+          </tr>
+          <tr>
+            <td>Email:&ensp;</td>
+            <td>info@cydi.or.tz</td>
+          </tr>
+          <tr>
+            <td>Website:&ensp;</td>
+            <td>www.cydi.or.tz</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item">
+                <a href="about.html">About</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="programs.html">Our Programs</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="contact.html">Contact Us</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="donate.html">Donate</a>
+              </li>
+            </ul>
+            <p class="text-muted small mb-4 mb-lg-0">
+              &copy; CYDI 2020. All Rights Reserved.
+            </p>
+          </div>
+          <div class="col-lg-6 h-100 text-center text-lg-right my-auto"></div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(function () {
+        $("form").submit(function (e) {
+          e.preventDefault();
+          let name = $("input[name='name']").val(),
+            phone = $("input[name='phone']").val(),
+            enquiry = $("textarea[name='enquiry']").val(),
+            href = `mailto:info@cydi.or.tz?subject=Enquiry&body=${enquiry} ${name} ${phone}`;
+          window.location.href = href;
+        });
+      });
+    </script>
+  </body>
+</html>
